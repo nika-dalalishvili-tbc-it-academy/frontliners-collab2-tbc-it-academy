@@ -3,5 +3,93 @@
 // || header
 .board {
     background-color: $color-2;
+    padding: 16px;
+    &__lobby{
+        padding:16px;
+        height: 320px;
+        background-color: $color-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 12px;
+
+        h1{
+            color: white
+        };
+
+        p{
+            margin-top: 10px;
+            color: white
+        };
+    }
+
+    &__content{
+        margin-top: 20px;
+        border: 1px solid grey;
+        border-radius: 12px ;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 8px;
+
+        button{
+            width: 80px;
+            height: 30px;
+            background-color: $color-2;
+            color: white;
+            border: 1px solid grey;
+            border-radius: 8px;
+       
+        }
+
+       
+    }
+ &__btns{
+    padding-top:  16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 16px;
+
+            button{
+                padding:6px 12px ;
+                 border: 1px solid grey;
+            border-radius: 8px;
+        
+
+            }
+
+            button:first-child{
+                color: white;
+                background-color: $color-2;
+            }
+
+            button:last-child{
+                background-color: green;
+                color: white;
+            }
+
+            &-width{
+                width: 150px;
+                
+            }
+        }
+
+        &__footer{
+            height: 80px;
+            margin-top: 20px;
+            border-top: 1px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p{
+                color: white;
+            }
+
+        }
+
 }
 
