@@ -1,4 +1,9 @@
-/* || base styles */
+// || base styles 
 @use './base/reset';
 @use './base/variables' as *;
 @use './base/globals';
+
+// || layouts
+@use './layout/header';
+@use './layout/options';
+@use './layout/board';

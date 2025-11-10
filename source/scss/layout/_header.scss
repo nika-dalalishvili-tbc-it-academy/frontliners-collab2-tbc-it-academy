@@ -1,0 +1,7 @@
+@use '../base/variables' as *;
+
+// || header
+.header {
+    background-color: $color-2;
+    grid-column: span 2;
+}
