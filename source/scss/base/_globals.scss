@@ -15,7 +15,7 @@ main {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    grid-template-rows: 90px 450px;
+    grid-template-rows: 90px auto;
     gap: 32px;
 }
 
