@@ -20,4 +20,6 @@ const suspects = data.suspects;
 const evidence = data.evidence;
 const scene = data.scenes; 
 
-export { suspects, evidence, scene };
+const selectedPairs = []
+
+export { suspects, evidence, scene, selectedPairs };
