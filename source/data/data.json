@@ -1,0 +1,113 @@
+{
+    "suspects": [
+        {
+            "id": "nora",
+            "name": "Nora (Backend Eng.)"
+        },
+        {
+            "id": "max",
+            "name": "Max (DevOps)"
+        },
+        {
+            "id": "ivy",
+            "name": "Ivy (PM)"
+        },
+        {
+            "id": "leo",
+            "name": "Leo (Intern)"
+        }
+    ],
+    "evidence": [
+        {
+            "id": "keycard-max",
+            "label": "Keycard tag MAX‑42",
+            "tags": [
+                "access",
+                "server-room"
+            ],
+            "foundAt": "Locker Room"
+        },
+        {
+            "id": "access-2213",
+            "label": "Access Log 22:13 — Server Room",
+            "tags": [
+                "access",
+                "time"
+            ],
+            "foundAt": "Security Desk"
+        },
+        {
+            "id": "override-flip",
+            "label": "Generator override switch was flipped",
+            "tags": [
+                "power",
+                "server-room"
+            ],
+            "foundAt": "Server Room"
+        },
+        {
+            "id": "mug-solder",
+            "label": "Coffee mug “MAX” smells like solder",
+            "tags": [
+                "solder",
+                "workshop"
+            ],
+            "foundAt": "Workshop"
+        },
+        {
+            "id": "melt-wire",
+            "label": "Melted wire near power relay",
+            "tags": [
+                "power",
+                "tamper"
+            ],
+            "foundAt": "Workshop"
+        },
+        {
+            "id": "hr-memo",
+            "label": "HR memo: DevOps role redundancy next week",
+            "tags": [
+                "motive",
+                "hr"
+            ],
+            "foundAt": "HR Office",
+            "motive": true
+        }
+    ],
+    "scenes": [
+        {
+            "id": "security",
+            "name": "Security Desk",
+            "text": "Logs and cameras might help.",
+            "hotspots": [
+                {
+                    "ev": "access-2213",
+                    "label": "Download server room access logs."
+                }
+            ]
+        },
+        {
+            "id": "server",
+            "name": "Server Room",
+            "text": "Generator panel hums.",
+            "hotspots": [
+                {
+                    "ev": "override-flip",
+                    "label": "Override is flipped."
+                }
+            ]
+        }
+    ],
+    "requiredPairs": [
+        [
+            "access-2213",
+            "override-flip"
+        ],
+        [
+            "mug-solder",
+            "melt-wire"
+        ]
+    ],
+    "culpritId": "max",
+    "requiredMotiveId": "hr-memo"
+}
