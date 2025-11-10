@@ -23,6 +23,7 @@ npm-debug.log*
 
 # Production
 /build
+# don't forget to delete dist
 /dist
 /.next
 /out
