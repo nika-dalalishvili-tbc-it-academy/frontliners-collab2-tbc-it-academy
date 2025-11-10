@@ -1,0 +1,51 @@
+@use '../base/variables' as *;
+
+// || options section
+.options {
+    background-color: $color-2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    color: white;
+    
+    & > div {
+        // overflow-y: auto;
+        height: fit-content;
+        flex: 1;
+        border: 1px solid black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+
+    }
+
+    &__title span {
+        padding: 0 4px;
+        border: 1px solid gray;
+        border-radius: 6px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .list-item {
+        background-color: blue;
+        border-radius: 12px;
+        padding: 2px;
+        border: 2px solid black;
+    }
+
+    .linked-evidence {
+        background-color: darkblue;
+        border-radius: 6px;
+        padding: 4px 6px;
+    }
+}
+

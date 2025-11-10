@@ -7,11 +7,81 @@
     <title>Document</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./dist/css/styles.css">
 </head>
 
 <body>
-    <script type="module" src="./assets/js/app.mjs"></script>
+    <main>
+        <!-- header -->
+        <section class="header">
+            <p>Detective -- <span>Case: Vanishing Variables</span></p>
+            <span>Investigate - <span id="place">Lobby</span></span>
+        </section>
+
+        <!-- options section -->
+        <section class="options">
+            <div class="options__notebook">
+                <h3 class="options__title">Notebook - <span id="evidence-counter"></span></h3>
+                <ul class="options__list" id="">
+                    <li>notebook item 1</li>
+                </ul>
+            </div>
+            <div class="options__linkboard">
+                <h3 class="options__title">Link Board</h3>
+
+                <div class="options__select-group">
+                    <select name="" id="link-board-select-1">
+                        <option value="">--choose--</option>
+                    </select>
+                    <select name="" id="link-board-select-2">
+                        <option value="">--choose--</option>
+                    </select>
+                </div>
+                
+                <div class="options__submit-field">
+                    <input type="text" name="" id="link-board-input" />
+                    <button id="link-board-btn">Add Link</button>
+                </div>
+                
+                
+            </div>
+            <div class="options__accuse">
+                <h3 class="options__title">Accuse</h3>
+                <div class="options__select-group">
+                    <select name="" id="suspects">
+                        <option value="">--suspect--</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">--motive--</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+                <button class="">Make Accusation</button>
+            </div>
+        </section>
+
+        <!-- board section -->
+        <section class="board">
+            <div class="board__lobby">
+                <h1>Lobby</h1>
+                <p>you arrive at JSville Labs. an outrage at 22:13 knocked a service offline. start at the lobby and speak to the Guard</p>
+                <div class="board__content">
+                    <p>Guard: "the intern Leo asked me how to exit ar 22:15."</p>
+                    <button>collect</button>
+                </div>
+                <div class="board__btns"><button class="back">< Back</button>
+                <button class="next">Next ></button></div>
+            </div>
+            <footer class="board__footer">
+                <p>Explore hotspot to collect clues.</p>
+                <div class="board__btns board__btns-width"><button class="back">< Back</button>
+                <button class="next">Next ></button></div>
+            </footer>
+        </section>
+    </main>
+    <script type="module" src="./source/js/app.mjs"></script>
 </body>
 
 </html>
