@@ -19,5 +19,8 @@ const data = await getData();
 const suspects = data.suspects;
 const evidence = data.evidence;
 const scene = data.scenes; 
+const required = data.requiredPairs;
 
-export { suspects, evidence, scene };
+const selectedPairs = []
+
+export { suspects, evidence, scene, selectedPairs, required };

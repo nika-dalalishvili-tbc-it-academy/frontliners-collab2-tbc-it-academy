@@ -1,5 +1,4 @@
-import { suspects, evidence, scene} from './modules/data.mjs';
-
-console.log(suspects);
-console.log(evidence);
-console.log(scene);
+import './modules/suspects.mjs';
+import './modules/place.mjs'
+import './modules/notebook.mjs';
+import './modules/match.mjs'
