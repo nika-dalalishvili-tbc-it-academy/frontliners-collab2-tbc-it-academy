@@ -3,15 +3,19 @@ import { suspects, evidence, scene } from './data.mjs';
 const place = document.getElementById('place');
 const nextBtn = document.querySelector('.next');
 const backBtn = document.querySelector('.back');
-const fountAt = [];
+const foundAt = [];
 let counter = 0;
+
+
 evidence.forEach((element) => {
-    fountAt.push(element.foundAt);
+    foundAt.push(element.foundAt);
 });
-const places = ['Lobby', ...fountAt];
+const places = ['Lobby', ...foundAt];
+
 
 nextBtn.addEventListener('click', () => {
     if (places.length - 1 === counter) {
+        place.textContent = places[counter];
         nextBtn.active = false;
     } else {
         place.textContent = places[counter];
